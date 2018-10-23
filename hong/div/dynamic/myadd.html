@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我加微信的人</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/myadd.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<a href="dynamic.html">
+					<i class="icon iconfont icon-guanbi"></i>
+					<p>我加微信的人</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<div class="lis">
+				<div class="li-top">
+					<img src="../../images/shou_22.png" alt="" class="tou" />
+					<div>
+						<p class="name">发呆的鱼</p>
+						<p class="time">2018-6-03 19:28</p>
+					</div>
+				</div>
+				<div id="li-cont">
+					<div class="wen">
+						<p>我不需要点赞，用心感受一个人，不要只看外表。</p>
+					</div>
+				</div>
+				<div class="number">
+					<div>
+						<p>浏览次数</p>
+					</div>
+					<div>
+						<i class="icon iconfont icon-dianzan1 zan"></i>
+						<i class="icon iconfont icon-pinglun ping"></i>
+					</div>
+				</div>
+				<div class="nei">
+
+				</div>
+			</div>
+			<div class="lis">
+				<div class="li-top">
+					<img src="../../images/shou_14.png" alt="" class="tou" />
+					<div>
+						<p class="name">淡然</p>
+						<p class="time">2018-6-03 19:28</p>
+					</div>
+				</div>
+				<div id="li-cont">
+					<div class="wen">
+						<p>大自然的风光……</p>
+					</div>
+				</div>
+				<div class="img_and_vieo">
+					<div>
+						<img src="../../images/beijing.png" />
+					</div>
+					<div>
+						<img src="../../images/beijing.png" />
+					</div>
+				</div>
+				<div class="number">
+					<div>
+						<p>浏览次数</p>
+					</div>
+					<div>
+						<i class="icon iconfont icon-dianzan1 zan"></i>
+						<i class="icon iconfont icon-pinglun ping"></i>
+					</div>
+				</div>
+			</div>
+			<div class="lis">
+				<div class="li-top">
+					<img src="../../images/shou_14.png" alt="" class="tou" />
+					<div>
+						<p class="name">淡然</p>
+						<p class="time">2018-6-03 19:28</p>
+					</div>
+				</div>
+				<div id="li-cont">
+					<div class="wen">
+						<p>大自然的风光……</p>
+					</div>
+				</div>
+				<div class="img_and_vieo">
+					<div>
+						<img src="../../images/beijing.png" />
+					</div>
+					<div>
+						<video width="800" height="">
+							<source src="../../js/shi.mp4" type="video/mp4"></source>
+							<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+									<param name="movie" value="myvideo.swf" />
+									<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+							</object>
+						</video>
+					</div>
+					<div>
+						<img src="../../images/beijing.png" />
+					</div>
+				</div>
+				<div class="number">
+					<div>
+						<p>浏览次数</p>
+					</div>
+					<div>
+						<i class="icon iconfont icon-dianzan1 zan"></i>
+						<i class="icon iconfont icon-pinglun ping" ></i>
+					</div>
+				</div>
+			</div>
+		</article>
+		<div id="Comment">
+			<div class="shu">
+				<input type="text" value="说点什么吧……" />
+				<button>发送</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(".zan").click(function() {
+			console.log("000")
+			if($(this).hasClass("fen")) {
+				$(this).removeClass("fen");
+				console.log("删除class");
+			} else {
+				$(this).addClass("fen");
+			}
+		})
+		$(".ping").click(function() {
+			if($("#Comment").is(':hidden')) {　　 //如果node是隐藏的则显示node元素，否则隐藏				　　
+				$("#Comment").show();　
+			} else {				　　
+				$("#Comment").hide();
+			}
+		})
+	</script>
+
+</html>

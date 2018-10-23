@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+@media only screen and (min-width: 320px) and (max-width:768px) {
+	header {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background: #E64C7E;
+	}
+	header>div {
+		width: 94%;
+		margin: 0 auto;
+	}
+	header>div>a {
+		display: flex;
+		align-items: center;
+		color: white;
+	}
+	header>div>a i {
+		font-size: 20px;
+	}
+	header>div>a p {
+		font-size: 17px;
+		margin-left: 6px;
+	}
+	article {
+		width: 100%;
+	}
+	#top {
+		width: 100%;
+		padding-bottom: 50px;
+		
+	}
+	#tou {
+		width: 84%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		padding-top: 12px;
+	}
+	#tou>img {
+		width: 107.5px;
+		height: 107.5px;
+		border-radius: 50px;
+	}
+	#tou >div>p:first-of-type{
+		font-size: 22px;
+		margin-left: 21px;
+	}
+	#tuijian{
+		display: flex;
+		align-items: center;
+		padding-left: 21px;
+		font-size: 13.5px;
+		padding-top: 12px;
+		color: #656565;
+	}
+	#tuijian >img{
+		width: 12.5px;
+		height: 12.5px;
+		margin-left: 4px;
+		
+	}
+	.hui{
+		width: 100%;
+		height: 10px;
+		background: #EBEBEB;
+	}	
+	#neirong{
+		width: 100%;
+	}
+	#tabs{
+		width: 94%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		border-bottom:1px solid #ebebeb ;
+	}
+	#tabs li{
+		padding-top: 15px;
+		padding-bottom:12.5px;
+		font-size: 15px;
+		position: relative;
+		color: #656565;
+	}
+	/*#tabs li >div{
+		width: 50%;
+		height: 2px;
+		background: #fff;
+		position: absolute;
+		bottom: 0%;
+		left: 25%;
+	}*/
+	.lis{
+		border-bottom: 1px solid #E6388F;
+	}
+	#contents{
+		width: 94%;
+		
+	}
+	
+	#contents>div{
+		width: 100%;
+	}
+	.cont{
+		display: none;
+	}
+	.active{
+		display:block;
+	}
+	
+	.divs{
+		width: 100%;
+	}
+	.lies{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #EBEBEB;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.lies >div{
+		width: 50%;
+		text-align: left;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		padding-left: 10px;
+	}
+	.lies >div >img{
+		width: 38px;
+		height: 38px;
+		border-radius: 50px;
+	}
+	.lies >div >p{
+		margin-left: 9px;
+		font-size: 12.5px;color: #8c8c8c;
+	}
+	.lies >img{
+		width: 18px;
+		height: 19px;
+	}
+}

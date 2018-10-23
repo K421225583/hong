@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="scss/scss1.css" />
+		<link rel="stylesheet" type="text/css" href="scss/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="foot/iconfont.css" />
+		<style>
+			@font-face {
+				font-family: 'fontnameRegular';
+				src: url('foot/PingFang_Regular.ttf');
+				
+			}
+			/*其中fontName替换为你的字体名称*/
+			
+			p {
+				font-family: fontnameRegular
+			}
+		</style>
+
+		<body>
+			<div id="header">
+				<div>
+					<p>红娘一号</p><span>（执子之手，与子偕老）</span>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="../images/shou_02.png" />
+						</div>
+						<div class="swiper-slide"><img src="../images/shou_02.png" /></div>
+						<div class="swiper-slide"><img src="../images/shou_02.png" /></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div id="lun">
+					<span class="icon iconfont icon-systemprompt"></span>
+					<p>做婚恋，我们是认真的！浪漫七夕同城相亲阿阿阿阿阿阿</p>
+				</div>
+			</div>
+			<div id="article">
+				<div>
+					<a href="">
+						<img src="../images/1510206525_alGTynEE.png" alt="" />
+						<div>
+							<p>赵眸</p>
+							<p>西安|22岁|技术员</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="../images/shou_07.png" alt="" />
+						<div>
+							<p>林</p>
+							<p>西安|22岁|编辑</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="../images/shou_09.png" alt="" />
+						<div>
+							<p>张楚</p>
+							<p>西安|22岁|教师</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="../images/shou_14.png" alt="" />
+						<div>
+							<p>李楠</p>
+							<p>西安|30岁|摄影师</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="../images/shou_15.png" alt="" />
+						<div>
+							<p>赵瑜</p>
+							<p>西安|22岁|学生</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="../images/1510206525_alGTynEE.png" alt="" />
+						<div>
+							<p>王旭</p>
+							<p>西安|22岁|销售</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="../images/shou_20.png" alt="" />
+						<div>
+							<p>郭宇</p>
+							<p>西安|25岁|设计师</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="../images/xiang_07.png" alt="" />
+						<div>
+							<p>李航</p>
+							<p>西安|28岁|医生</p>
+						</div>
+					</a>
+				</div>
+				<div>
+					<a href="">
+						<img src="../images/shou_22.png" alt="" />
+						<div>
+							<p>李佳</p>
+							<p>西安|22岁|文秘</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div id="bottom">
+				<div>
+					<div>
+						<p>
+							<a href="single-home/single-home.html">我是单身</a>
+						</p>
+					</div>
+					<div>
+						<p>
+							<a href="Matchmaker/Matchmaker.html">我做红娘</a>
+						</p>
+					</div>
+					<div>
+						<p>
+							<a href="">精彩活动</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</body>
+		<script src="../swiper/swiper-4.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: true,
+				scrollbar: {
+					el: '.swiper-scrollbar',
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					paginationClickable: true
+				},
+			});
+		</script>
+
+</html>

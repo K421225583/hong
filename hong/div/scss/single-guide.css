@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	header {
+		width: 100%;
+		background: #e83d92;
+	}
+	header>div {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	header>div a {
+		display: flex;
+		align-items: center;
+	}
+	header>div a i {
+		margin-left: 10px;
+		font-size: 21px;
+		color: #fff;
+	}
+	header div a p {
+		margin-left: 6px;
+		font-size: 17.5px;
+		color: #fff;
+	}
+	article {
+		width: 100%;
+	}
+	.lis {
+		width: 94%;
+		margin: 0 auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #ebebeb;
+	}
+	.lis a {
+		display: flex;
+	}
+	.lis a>img {
+		width: 60px;
+		height: 60px;
+		border-radius: 10px;
+		margin-left: 10px;
+	}
+	.cot {
+		width: 80%;
+		padding-left: 15px;
+	}
+	.title {
+		font-size: 14px;
+		color: #656565;
+	}
+	.Appointment {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 16px;
+	}
+	.Appointment>span {
+		padding: 4px 4px;
+		color: #f34180;
+		border: 1px solid #f34180;
+		border-radius: 5px;
+	}
+	.Appointment>div span {
+		color: #989898;
+		font-size: 10px;
+	}
+	.video {
+		width: 100%;
+		position: relative;
+		margin-top: 10px;
+		padding-bottom: 56.25%;
+		/*需要用padding来维持16:9比例,也就是9除以16*/
+		height: 0;
+	}
+	.video>video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		/*object-fit:fill;*/
+	}
+	#palys {
+		position: absolute;
+		z-index: 1000;
+		top: 40%;
+		left: 46%;
+	}
+	#duration {
+		width: 60px;
+		height: 20px;
+		text-align: center;
+		line-height: 20px;
+		background: #000;
+		opacity: 0.3;
+		color: white;
+		border-radius: 50px;
+		position: absolute;
+		right:0%;
+		bottom: 0%;
+	}
+}

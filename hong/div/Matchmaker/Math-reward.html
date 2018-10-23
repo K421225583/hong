@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>悬赏</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../../swiper/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/Math-reward.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../swiper/swiper-4.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="head-top">
+				<a href="Matchmaker.html">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>悬赏</p>
+				</a>
+			</div>
+		</header>
+		
+		<article>
+			<ul id="uls">
+				<li class="lis">推荐悬赏</li>
+				<li>全部悬赏</li>
+			</ul>	
+			<div id="content">
+				<div id="content1" class="content active">
+					<div class="divs">
+						<a href="">
+							<img src="../../images/1026176945908拷贝.png"/>
+							<div>
+								<p>发呆的女人</p>
+								<p>26岁|30w-50w|IT技术经理</p>
+								<p>2018-08-07</p>
+							</div>
+							<div>
+								<p>￥8.00</p>
+							</div>
+						</a>
+					</div>
+					
+					<div class="divs">
+						<a href="">
+							<img src="../../images/1510206525_vvYATbnW.png"/>
+							<div>
+								<p>淡然</p>
+								<p>26岁|30w-50w|IT技术经理</p>
+								<p>2018-08-07</p>
+							</div>
+							<div>
+								<p>￥8.00</p>
+							</div>
+						</a>
+					</div>
+					<div class="divs">
+						<a href="">
+							<img src="../../images/1510206525_alGTynEE.png"/>
+							<div>
+								<p>发呆的鱼</p>
+								<p>26岁|30w-50w|IT技术经理</p>
+								<p>2018-08-07</p>
+							</div>
+							<div>
+								<p>￥8.00</p>
+							</div>
+						</a>
+					</div>
+					<div class="divs">
+						<a href="">
+							<img src="../../images/147848678177596.png"/>
+							<div>
+								<p>发呆的鱼</p>
+								<p>26岁|30w-50w|IT技术经理</p>
+								<p>2018-08-07</p>
+							</div>
+							<div>
+								<p>￥8.00</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div id="content2"  class="content">
+					<div class="divs">
+						<a href="Math-xingxi.html">
+							<img src="../../images/1026176945908拷贝.png"/>
+							<div>
+								<p>发呆的女人</p>
+								<p>26岁|30w-50w|IT技术经理</p>
+								<p>2018-08-07</p>
+							</div>
+							<div>
+								<p>￥8.00</p>
+							</div>
+						</a>
+					</div>
+					
+					<div class="divs">
+						<a href="">
+							<img src="../../images/1510206525_vvYATbnW.png"/>
+							<div>
+								<p>淡然</p>
+								<p>26岁|30w-50w|IT技术经理</p>
+								<p>2018-08-07</p>
+							</div>
+							<div>
+								<p>￥8.00</p>
+							</div>
+						</a>
+					</div>
+					<div class="divs">
+						<a href="">
+							<img src="../../images/1510206525_alGTynEE.png"/>
+							<div>
+								<p>发呆的鱼</p>
+								<p>26岁|30w-50w|IT技术经理</p>
+								<p>2018-08-07</p>
+							</div>
+							<div>
+								<p>￥8.00</p>
+							</div>
+						</a>
+					</div>
+					<div class="divs">
+						<a href="">
+							<img src="../../images/147848678177596.png"/>
+							<div>
+								<p>发呆的鱼</p>
+								<p>26岁|30w-50w|IT技术经理</p>
+								<p>2018-08-07</p>
+							</div>
+							<div>
+								<p>￥8.00</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</article>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$("#uls li").off("click").on("click", function() {
+				var index = $(this).index();
+				$(this).addClass("lis").siblings().removeClass("lis");
+				$("#content .content").eq(index).addClass("active").siblings().removeClass("active");
+			});
+		});
+		
+		
+	</script>
+
+</html>

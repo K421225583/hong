@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>代理加盟</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../../swiper/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/Math-join.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../swiper/swiper-4.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		
+		<div id="body">
+
+		</div>
+		<div id="fuwu">
+			<p>是否提交</p>
+			<div id="fot">
+				<div>
+					<a href="javascript:;" class="quxiao">取消</a>
+				</div>
+				<div>
+					<a href="javascript:;" class="que">确定</a>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div id="head-top">
+				<a href="Matchmaker.html">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>代理加盟</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<ul>
+				<li>
+					<a href="javascript:;">
+						<div>
+							<p>推荐人</p>
+						</div>
+						<div>
+							<span class="spans">添加推荐人</span>
+							<span class="icon iconfont icon-jiantouyou you"></span>
+						</div>
+					</a>
+				</li>
+				<li class="lies">
+					<a href="javascript:;">
+						<div>
+							<p>推荐码</p>
+						</div>
+						<div>
+							<input type="text" value="添加推荐码" class="shu"></input>
+						</div>
+					</a>
+				</li>
+				<li class="lies">
+					<a href="javascript:;">
+						<div>
+							<span>*</span>
+							<p>姓名</p>
+						</div>
+						<div>
+							<input type="text" value="请输入姓名" class="shu"></input>							
+						</div>
+					</a>
+				</li>
+				<li class="lies">
+					<a href="javascript:;">
+						<div>
+							<span>*</span>
+							<p>电话</p>
+						</div>
+						<div>
+							<input type="text" value="请输入电话" class="shu"></input>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div>
+							<p>辖区</p>
+						</div>
+						<div>
+							<span class="icon iconfont icon-jiantouyou you"></span>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<textarea name="" rows="" cols="" placeholder="请输入当前规模（最少5个字，最多60个字）"></textarea>
+		</article>
+		<footer>
+			<button id="btn">提交认证</button>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		$(".yes").click(function() {
+			if($(".aray").hasClass("icon-check")) {
+				$(".aray").removeClass("icon-check");
+				$(".yes").css({
+					"background": "#fff",
+					"border-color": "#ebebeb"
+				});
+			} else {
+				$(".aray").addClass("icon-check");
+				$(".yes").css({
+					"background": "#f34180",
+					"border-color": "#f34180"
+				});
+			}
+		})
+		$("#btn").click(function(){
+			$("#body").show(300);
+			$("#fuwu").show(300);
+		})
+		$(".quxiao").click(function(){
+			$("#body").hide(300);
+			$("#fuwu").hide(300);
+		})
+		$(".que").click(function(){
+			$("#body").hide(300);
+			$("#fuwu").hide(300);
+		})
+	</script>
+
+</html>

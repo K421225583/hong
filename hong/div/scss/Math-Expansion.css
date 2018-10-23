@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+@media only screen and (min-width: 320px) and (max-width:768px) {
+	header {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background: #E64C7E;
+	}
+	header>div {
+		width: 94%;
+		margin: 0 auto;
+	}
+	header>div>a {
+		display: flex;
+		align-items: center;
+		color: white;
+	}
+	header>div>a i {
+		font-size: 20px;
+	}
+	header>div>a p {
+		font-size: 17px;
+		margin-left: 6px;
+	}
+	article{
+		width: 100%;
+		padding-top: 22.5px;
+	}
+	#yue {
+		width: 100%;
+		position: relative;
+		background: white;
+		display: flex;
+		justify-content: flex-end;
+		border-bottom: 1px solid #EBEBEB;
+	}
+	.yue-top {
+		width: 20%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.san {
+		width: 0;
+		height: 0;
+		border: 6px solid #000;
+		border-color: #989898 transparent transparent transparent;
+		margin-top: 6px;
+		margin-left: 5px;
+	}
+	.cang {
+		width: 20%;
+		position: absolute;
+		bottom: -136px;
+		z-index: 600;
+		background: white;
+		box-shadow: 0px 0px 5px #989898;
+	}
+	.son {
+		width: 100%;
+		height: 0px;
+		overflow: scroll;
+	}
+	.fen {
+		padding: 10px;
+		border-bottom: 1px solid #EBEBEB;
+	}
+	#tables{
+		width: 94%;
+		margin: 0 auto;
+	}
+	#tables >div{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		border-bottom: 1px solid #EBEBEB;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	#tables >div:first-of-type >p{
+		font-weight: 600;
+		color: #656565;
+	}
+	#tables >div p{
+		font-size: 13px;
+	}
+	.bot{
+		width: 94%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: flex-end;
+		padding-top: 11px;
+		padding-bottom:11px ;
+		align-items: center;
+	}
+	.bot >p{
+		font-size: 13px;
+		color: #656565;
+	}
+	.bot >p:last-of-type{
+		font-size: 15px;
+		color: #f34180;
+	}
+	.bot >p:last-of-type::first-letter{
+		font-size: 12px;
+	}
+	#bottom{
+		width: 94%;
+		margin: 0 auto;
+	}
+	#bottom >p:first-of-type{
+		color: #ed3838;
+		font-size: 12.5px;
+	}
+	#bottom >p:last-of-type{
+		font-size: 12px;
+		text-indent: 2em;
+		line-height: 24px;
+		color: #656565;
+	}
+}

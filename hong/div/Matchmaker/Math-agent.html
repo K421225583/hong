@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>代理套餐包</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../../swiper/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/Math-agent.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../swiper/swiper-4.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="head-top">
+				<a href="Math-Open.html">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>代理套餐包</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<ul id="uls">
+				<li class="lis">代理加盟</li>
+				<li>婚介所</li>
+			</ul>
+			<div id="contents">
+				<div class="content active" id="cont1">
+					<div id="box">
+						<div class="divs">
+							<!--<img src="../../images/lis_03.png"/>-->
+							<p>直辖市/省级代理</p>
+							<p>送婚介所1000个</p>
+							<p>单店激活返300元</p>
+						</div>
+						<div class="divs">
+							<p>市级代理</p>
+							<p>送婚介所200个</p>
+							<p>单店激活返300元</p>
+						</div>
+						<div class="divs">
+							<!--<img src="../../images/lis_03.png"/>-->
+							<p>县级代理</p>
+							<p>送婚介所200个</p>
+							<p>单店激活返300元</p>
+						</div>
+					</div>
+					
+					<div id="btn1">
+						<button>立即申请</button>
+					</div>
+				</div>
+				<div class="content" id="cont2">
+					<div id="box2">
+						<div class="divs">
+							<!--<img src="../../images/lis_03.png"/>-->
+							<p>婚介所</p>
+							<p>￥360.00</p>
+							<p>快乐返活动</p>
+						</div>
+						<div class="divs">
+							<p>婚介所</p>
+							<p>￥360.00</p>
+							<p>快乐返活动</p>
+						</div>
+						<div class="divs">
+							<p>婚介所</p>
+							<p>￥360.00</p>
+							<p>快乐返活动</p>
+						</div>
+					</div>
+					<div id="btn2">
+						<button>立即申请</button>
+					</div>
+				</div>
+			</div>
+		</article>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$("#uls li").off("click").on("click", function() {
+				var index = $(this).index();
+				$(this).addClass("lis").siblings().removeClass("lis");
+				$("#contents .content").eq(index).addClass("active").siblings().removeClass("active");
+			});
+		});
+	</script>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注销账户</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/single-unsubscribe.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<a href="single-Personal.html">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>个人设置</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<ul>
+				<li>
+					<p>消息提醒</p>
+					<div id="bei">
+						<i class="icon iconfont icon-check actives"></i>
+					</div>
+				</li>
+				<li class="zhu">注销账户</li>
+				<li>退出账号</li>
+				<li>我的微信号</li>
+				<li>隐私</li>
+				<li>实名认证</li>
+			</ul>
+		</article>
+		<div id="body">
+
+		</div>
+		<div id="content">
+			<p id="title">注册账号风险</p>
+			<div>
+				<p class="nei">注销后将放弃一下资产或权益，包括不限于：个人身份证信息、账户信息、权益将被清空切无法恢复，交易记录将被删除，请确保所有交易已完结且无纠纷，账号注销后所有权益将视作自动放弃。</p>
+			</div>
+			<div id="bot">
+				<div class="quxiao">
+					<p>取消</p>
+				</div>
+				<div class="que">
+					<p>确定</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$("#bei").click(function() {
+			if($(".actives").hasClass("icon-check")) {
+				$(".actives").removeClass("icon-check");
+				$("#bei").css({
+					"background": "#fff",
+					"border-color": "#ebebeb"
+				});
+			} else {
+				$(".actives").addClass("icon-check");
+				$("#bei").css({
+					"background": "#f34180",
+					"border-color": "#f34180"
+				});
+			}
+		})
+		
+		
+		$(".zhu").click(function(){
+			$("#body").show(300);
+			$("#content").show(300);
+		})
+		$(".quxiao").click(function(){
+			$("#body").hide(300);
+			$("#content").hide(300);
+		})
+		
+		$(".que").click(function(){
+			$("#body").hide(300);
+			$("#content").hide(300);
+		})
+	</script>
+
+</html>

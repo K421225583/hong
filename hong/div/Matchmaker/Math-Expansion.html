@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>拓展奖</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/Math-Expansion.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="head-top">
+				<a href="Math-Profit.html">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>拓展奖</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<div id="yue">
+				<div class="yue-top">
+					<p>2018-07</p>
+					<div class="san"></div>
+				</div>
+				<div class="cang">
+					<div class="son">
+						<div class="fen">2018-1</div>
+						<div class="fen">2018-2</div>
+						<div class="fen">2018-3</div>
+						<div class="fen">2018-4</div>
+						<div class="fen">2018-5</div>
+						<div class="fen">2018-6</div>
+						<div class="fen">2018-7</div>
+						<div class="fen">2018-8</div>
+						<div class="fen">2018-9</div>
+						<div class="fen">2018-10</div>
+						<div class="fen">2018-11</div>
+					</div>
+				</div>
+			
+			</div>
+			<div id="tables">
+				<div>
+					<p>项目</p>
+					<p>拓展金额</p>
+					<p>奖励比例</p>
+					<p>奖金</p>
+				</div>
+				<div>
+					<p>一级</p>
+					<p>￥100000.00</p>
+					<p>30%</p>
+					<p>￥30000.00</p>
+				</div>
+				<div>
+					<p>一级</p>
+					<p>￥100000.00</p>
+					<p>30%</p>
+					<p>￥30000.00</p>
+				</div>
+			</div>
+			<div class="bot">
+					<p>合计：</p><p>￥500.00</p>
+				</div>
+				<div id="bottom">
+					<p>奖励说明</p>
+					<p>拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展拓展</p>
+				</div>
+		</article>
+		
+		
+		
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$("#uls li").off("click").on("click", function() {
+				var index = $(this).index();
+				$(this).addClass("lis").siblings().removeClass("lis");
+				$("#contents .content").eq(index).addClass("active").siblings().removeClass("active");
+			});
+		});
+		
+		$(".yue-top").click(function(){
+			$(".son").css({"height":"126px"});
+			
+		})
+		$(".day-top").click(function(){
+			$(".cang-son").css({"height":"126px"})
+		})
+		$(".fen").click(function(){
+			$(".yue-top").children("p").text($(this).text());
+			$(".son").css({"height":"0px"});
+		})
+		$(".tian").click(function(){
+			$(".day-top").children("p").text($(this).text());
+			$(".cang-son").css({"height":"0px"});
+		})
+	</script>
+
+</html>

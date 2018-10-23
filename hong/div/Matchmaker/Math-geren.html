@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人牵线</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/Math-geren.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="head-top">
+				<a href="Math-success.html">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>个人牵线</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<div id="top">
+				<div id="tou">
+					<img src="../../images/shou_22.png" />
+					<div>
+						<p>芷若汀兰</p>	
+						<div id="tuijian">
+							<p>推荐人笑笑</p><img src="../../images/call_03.png"/>
+						</div>
+					</div>
+					
+				</div>
+			
+			</div>
+			<div class="hui"></div>
+			<div>
+				<ul id="tabs">
+					<li id="" class="lis ">帮友20人
+					<div ></div>
+					</li>
+					<li id="" class="">
+						帮友推荐红娘5人
+						<div></div>
+					</li>
+				</ul>
+				<div id="contents">
+					<div class="cont active">
+						<div class="divs">
+							<div class="lies">
+								<div>
+									<img src="../../images/shou_05.png"/>
+									<p>张一</p>
+								</div>
+								<img src="../../images/call_03.png" alt="" />
+							</div>
+							<div class="lies">
+								<div>
+									<img src="../../images/shou_14.png"/>
+									<p>李明</p>
+								</div>
+								<img src="../../images/call_03.png" alt="" />
+							</div>
+							<div class="lies">
+								<div>
+									<img src="../../images/shou_16.png"/>
+									<p>李磊</p>
+								</div>
+								<img src="../../images/call_03.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="cont">
+						<div class="divs">
+							<div class="lies">
+								<div>
+									<img src="../../images/shou_05.png"/>
+									<p>张一</p>
+								</div>
+								<img src="../../images/call_03.png" alt="" />
+							</div>
+							<div class="lies">
+								<div>
+									<img src="../../images/shou_14.png"/>
+									<p>李明</p>
+								</div>
+								<img src="../../images/call_03.png" alt="" />
+							</div>
+							<div class="lies">
+								<div>
+									<img src="../../images/shou_16.png"/>
+									<p>李磊</p>
+								</div>
+								<img src="../../images/call_03.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$("#tabs li").off("click").on("click", function() {
+				var index = $(this).index();
+				$(this).addClass("lis").siblings().removeClass("lis");
+				$("#contents .cont").eq(index).addClass("active").siblings().removeClass("active");
+			});
+		});
+		
+		
+	</script>
+
+</html>

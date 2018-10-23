@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../../swiper/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/Publication.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<a href="">
+					<i class="icon iconfont icon-guanbi"></i>
+					<p>发布动态</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<div id="art-top">
+				<textarea name="" rows="20" cols="50" placeholder="这一刻的身边事"></textarea>
+				<div id="photo">
+					<!--<img src="../../images/1510206525_alGTynEE.png"/>
+					<img src="../../images/1510206525_alGTynEE.png"/>
+					<img src="../../images/1510206525_alGTynEE.png"/>
+					<img src="../../images/1510206525_alGTynEE.png"/>
+					<img src="../../images/1510206525_alGTynEE.png"/>-->
+					<div id="zhao">
+						
+						<a href="">
+							<img src="../../images/icon_upload_tx_userinfo.png" />
+							<p>照片/视频</p>
+						</a>
+					</div>
+				</div>
+				<div  id="Location">
+					<div id="postion">
+						<p>获取当前位置</p>
+					</div>
+					<span>西安市  雁塔区  三爻   南飞鸿官场  5号楼</span>
+				</div>
+				
+			</div>
+			<div id="tong">
+				<p>同步到相册</p>
+				<div id="bei" >
+					<i class="icon iconfont icon-check active"   ></i>
+				</div>
+			</div>
+		</article>
+		<footer>
+			<button>发表</button>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		$("#bei").click(function(){
+			if($(".active").hasClass("icon-check")){
+				$(".active").removeClass("icon-check");
+				$("#bei").css({"background":"#fff","border-color":"#ebebeb"});
+			}else {
+				$(".active").addClass("icon-check");
+				$("#bei").css({"background":"#f34180","border-color":"#f34180"});
+			}
+		})
+		
+	</script>
+</html>

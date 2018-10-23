@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的主页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/My-home.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/swiper.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id="body"></div>
+		<header>
+			<div id="top">
+				<a href="../home.html" style="text-decoration: none;color: white;">
+				<span class="icon iconfont icon-guanbi"></span>
+				</a>
+				<p>我的主页</p>
+			</div>
+			<div id="midle">
+				<div>
+					<img src="../../images/10.png" />
+					<p>芷若汀兰</p>
+					<div>
+						<p>女</p>
+						<p>28岁</p>
+						<p>未婚</p>
+					</div>
+				</div>
+			</div>
+			<div id="bottom">
+				<div id="tab">
+					<div class="fli">
+						基本信息
+					</div>
+					<div>
+						我的动态
+					</div>
+					<div>
+						我的相册
+					</div>
+					<div>
+						我的短视频
+					</div>
+				</div>
+			</div>
+		</header>
+		<artcile id="tabContent">
+			<!--这是基本信息页面-->
+			<div class="fdiv active" id="tab1">
+				<div id="navs">
+					<div>
+						<a href="sendBad.html">
+							<span class="icon iconfont icon-red-packet_icon" style="color:#f3d7a6;"></span>
+							<p>已发红包</p>
+						</a>
+					</div>
+					<div>
+						<a href="myHello.html">
+							<span class="icon iconfont icon-liaotian" style="color:#c56fec ;"></span>
+							<p>已打招呼</p>
+						</a>
+					</div>
+					<div>
+						<a href="mySecret-love.html">
+							<span class="icon iconfont icon-079aiqing" style="color: #f34180;"></span>
+							<p>我的暗恋</p>
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<span class="icon iconfont icon-gifs" style="color:#27cdae;"></span>
+							<p>已送礼物</p>
+						</a>
+					</div>
+					<div>
+						<a href="mygifts.html">
+							<span class="icon iconfont icon-gifs" style="color:#27cdae;"></span>
+							<p>我的评论</p>
+						</a>
+					</div>
+					<div>
+
+					</div>
+				</div>
+				<div id="arcts">
+					<ul id="uls">
+						<li class="lis">基本信息</li>
+						<li>交友条件</li>
+					</ul>
+					<div id="contents">
+						<!--这是基本信息部分-->
+						<div class="chu active" id="chu1">
+							<div class="zhong">
+								<div class="zi">
+									<p>*</p>
+									<p >性别</p>
+								</div>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('sex').style.display='block'">
+									<p></p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</div>
+							</div>
+
+							<div class="zhong">
+								<div>
+									<p>*</p>
+									<p>出生日期</p>
+								</div>
+								<div>
+									<p></p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</div>
+							</div>
+							<div class="zhong">
+								<div class="zi">
+									<p>*</p>
+									<p >身高</p>
+								</div>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('cang2').style.display='block'">
+									<p></p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</div>
+							</div>
+							<div>
+								<div class="zi">
+									<p >体型</p>
+								</div>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('cang5').style.display='block'">
+									<p></p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</div>
+							</div>
+
+							<div class="zhong">
+								<div class="zi">
+									<p>*</p>
+									<p onclick="document.getElementById('body').style.display='block';document.getElementById('cang3').style.display='block'">学历</p>
+								</div>
+								<div>
+									<p></p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</div>
+							</div>
+
+							<div>
+								<div>
+								<p>职业</p>
+								</div>
+								<div>
+									<p></p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</div>
+							</div>
+
+							<div class="zhong">
+								<div>
+									<p>*</p>
+									<p >月收入</p>
+								</div>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('cang4').style.display='block'"> 
+									<p></p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</div>
+							</div>
+
+							<div>
+								<p>所在地</p>
+								<div>
+									<p></p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</div>
+							</div>
+							<div>
+								<p>籍贯</p>
+								<div>
+									<p></p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</div>
+							</div>
+							<div class="zhong">
+								<div class="zi">
+									<p>*</p>
+									<p >婚姻状况</p>
+								</div>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('cang').style.display='block'">
+									<p></p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</div>
+							</div>
+							<div>
+								<p>兴趣爱好</p>
+								<input type="text" name="" style="border: none;" id="" value="" />
+							</div>
+
+							<div>
+								<p>微信</p>
+								<input type="text" name="" style="border: none;" id="" value="" />
+							</div>
+
+							<div>
+								<p>QQ</p>
+								<input type="text" name="" style="border: none;" id="" value="" />
+							</div>
+
+							<div class="zhong">
+								<div class="zi">
+									<p>*</p>
+									<p>手机号</p>
+								</div>
+								<div>
+									<input type="text" name="" style="border: none;" id="" value="" />
+								</div>
+							</div>
+
+							<div>
+								<p>是否吸烟</p>
+								<div id="right">
+									<span>是</span>
+									<div class="men"><i class="icon iconfont icon-check active"></i></div>
+									<span style="margin-left:6px ;">否</span>
+									<div class="women"><i class="icon iconfont  actives"></i></div>
+								</div>
+							</div>
+
+							<div>
+								<p>是否喝酒</p>
+								<div id="right">
+									<span>是</span>
+									<div class="yes"><i class="icon iconfont icon-check aray"></i></div>
+									<span style="margin-left:6px ;">否</span>
+									<div class="no"><i class="icon iconfont  arays"></i></div>
+								</div>
+							</div>
+
+							<div>
+								<p onclick="document.getElementById('body').style.display='block';document.getElementById('cang6').style.display='block'">星座</p>
+								<div>
+									<p></p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</div>
+							</div>
+
+							<div>
+								<p>爱情宣言</p>
+								<p></p>
+							</div>
+
+							<!--<div>
+								<p>实名验证</p>
+								<p></p>
+							</div>-->
+
+						</div>
+						<!--这是交友条件部分-->
+						<div class="chu" id="chu2">
+							<div>
+								<p>性别</p>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('sex').style.display='block'">
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>婚姻状况</p>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('cang').style.display='block'">
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>月薪</p>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('cang4').style.display='block'">
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>身高</p>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('cang2').style.display='block'">
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>学历</p>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('cang3').style.display='block'">
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>年龄</p>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('age').style.display='block'">
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>职业</p>
+								<div>
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>房</p>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('room').style.display='block'">
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>车</p>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('car').style.display='block'">
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>兴趣爱好</p>
+								<div>
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>同城</p>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('region').style.display='block'">
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>体型</p>
+								<div>
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>是否吸烟</p>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('smoke').style.display='block'">
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+							<div>
+								<p>是否喝酒</p>
+								<div onclick="document.getElementById('body').style.display='block';document.getElementById('drink').style.display='block'">
+									<p></p>
+									<i class="icon iconfont icon-jiantouyou"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="fdiv " id="tab2">
+				<div class="lis">
+					<div>
+						<img src="../../images/10.png" alt="" />
+						<div>
+							<p>芷若汀兰</p>
+							<p>2018 6.3 7:30</p>
+						</div>
+					</div>
+					<div>
+						<p>我不需要点赞，用心感受每一个人，不要只看外表。</p>
+					</div>
+					<div class="last2">
+
+					</div>
+					<div class="last1">
+						<p>浏览 20 次</p>
+						<div id="">
+							<span class="icon iconfont icon-dianzan zan"></span>
+							<img src="../../images/pin.png" class="tang" />
+						</div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="../../images/10.png" alt="" />
+						<div>
+							<p>芷若汀兰</p>
+							<p>2018 6.3 7:30</p>
+						</div>
+					</div>
+					<div>
+						<p>大自然的风光…………</p>
+					</div>
+					<div class="last2">
+						<img src="../../images/dongtai_03.png" />
+						<img src="../../images/dongtai_03.png" />
+					</div>
+					<div class="last1">
+						<p>浏览 20 次</p>
+						<div id="">
+							<span class="icon iconfont icon-dianzan zan"></span>
+							<img src="../../images/pin.png" class="tang" />
+						</div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<img src="../../images/10.png" alt="" />
+						<div>
+							<p>芷若汀兰</p>
+							<p>2018 6.3 7:30</p>
+						</div>
+					</div>
+					<div>
+						<p>大自然的风光……</p>
+					</div>
+					<div class="last2">
+						<img src="../../images/dongtai_03.png" />
+					</div>
+					<div class="last1">
+						<p>浏览 20 次</p>
+						<div id="">
+							<span class="icon iconfont icon-dianzan zan"></span>
+							<img src="../../images/pin.png" class="tang" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fdiv " id="tab3">
+				<div>
+					<div>
+						<img src="../../images/xiang_03.png" alt="" />
+						<img src="../../images/xiang_05.png" alt="" />
+						<img src="../../images/xiang_07.png" alt="" />
+					</div>
+				</div>
+				<div id="photo">
+					<i class="icon iconfont icon-xiangji"></i>
+				</div>
+			</div>
+			<div class="fdiv " id="tab4">
+				<div>
+					<div>
+						<video width="107" height="107" src="" poster="../../images/xiang_05.png" autoplay="none" loop="false"></video>
+						<video width="107" height="107" src="" poster="../../images/xiang_05.png" autoplay="none" loop="false"></video>
+						<video width="107" height="107" src="" poster="../../images/xiang_07.png" autoplay="none" loop="false"></video>
+					</div>
+				</div>
+				<div id="camera">
+					<i class="icon iconfont icon-ai14"></i>
+				</div>
+			</div>
+		</artcile>
+
+		<div id="yin" style="display: none;">
+			<div>
+				<input type="text" placeholder="说点什么吧" />
+				<button>发送</button>
+			</div>
+		</div>
+		<div id="sex" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('sex').style.display='none'">取消</p>
+				<p>婚姻状况</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('sex').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="Sex">
+				<div class="swiper-wrapper" style="top:74px ;">
+					<div class="swiper-slide">
+						<p>男</p>
+					</div>
+					<div class="swiper-slide">
+						<p>女</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+		<div id="cang" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang').style.display='none'">取消</p>
+				<p>婚姻状况</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="hunyin">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<p>未婚</p>
+					</div>
+					<div class="swiper-slide">
+						<p>离异</p>
+					</div>
+					<div class="swiper-slide">
+						<p>离异未带小孩</p>
+					</div>
+					<div class="swiper-slide">
+						<p>离异不带小孩</p>
+					</div>
+					<div class="swiper-slide">
+						<p>丧偶</p>
+					</div>
+					<div class="swiper-slide">
+						<p>丧偶带小孩</p>
+					</div>
+					<div class="swiper-slide">
+						<p>丧偶不带小孩</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+
+		<!--身高-->
+		<div id="cang2" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang2').style.display='none'">取消</p>
+				<p>身高</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang2').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="height">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<p>140~150</p>
+					</div>
+					<div class="swiper-slide">
+						<p>150~160</p>
+					</div>
+					<div class="swiper-slide">
+						<p>160~170</p>
+					</div>
+					<div class="swiper-slide">
+						<p>170~180</p>
+					</div>
+					<div class="swiper-slide">
+						<p>180~190</p>
+					</div>
+					<div class="swiper-slide">
+						<p>190~120</p>
+					</div>
+					<div class="swiper-slide">
+						<p>200以上</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+
+		<!--学历-->
+		<div id="cang3" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang3').style.display='none'">取消</p>
+				<p>学历</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang3').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="xueli">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<p>中专</p>
+					</div>
+					<div class="swiper-slide">
+						<p>大专</p>
+					</div>
+					<div class="swiper-slide">
+						<p>本科</p>
+					</div>
+					<div class="swiper-slide">
+						<p>硕士</p>
+					</div>
+					<div class="swiper-slide">
+						<p>博士</p>
+					</div>
+					<div class="swiper-slide">
+						<p>博士后</p>
+					</div>
+
+				</div>
+			</div>
+			<div></div>
+		</div>
+
+		<!--月收入-->
+		<div id="cang4" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang4').style.display='none'">取消</p>
+				<p>月收入</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang4').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="money">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<p>2~5k</p>
+					</div>
+					<div class="swiper-slide">
+						<p>5~8k</p>
+					</div>
+					<div class="swiper-slide">
+						<p>8k~1w</p>
+					</div>
+					<div class="swiper-slide">
+						<p>1W~1.5w</p>
+					</div>
+					<div class="swiper-slide">
+						<p>1.5W以上</p>
+					</div>
+
+				</div>
+			</div>
+			<div></div>
+		</div>
+
+		<!--体型-->
+		<div id="cang5" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang5').style.display='none'">取消</p>
+				<p>体型</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang5').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="tige">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<p>偏瘦</p>
+					</div>
+					<div class="swiper-slide">
+						<p>瘦</p>
+					</div>
+					<div class="swiper-slide">
+						<p>正常</p>
+					</div>
+					<div class="swiper-slide">
+						<p>胖</p>
+					</div>
+					<div class="swiper-slide">
+						<p>偏胖</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+
+		<!--年龄-->
+		<div id="age" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('age').style.display='none'">取消</p>
+				<p>年龄</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('age').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="Age">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<p>18~25岁</p>
+					</div>
+					<div class="swiper-slide">
+						<p>26~30岁</p>
+					</div>
+					<div class="swiper-slide">
+						<p>31~35岁</p>
+					</div>
+					<div class="swiper-slide">
+						<p>36~40岁</p>
+					</div>
+					<div class="swiper-slide">
+						<p>41~45岁</p>
+					</div>
+					<div class="swiper-slide">
+						<p>不限</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+
+		<!--房子-->
+		<div id="room" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('room').style.display='none'">取消</p>
+				<p>房</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('room').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="Room">
+				<div class="swiper-wrapper" style="top: 74px;">
+					<div class="swiper-slide">
+						<p>有房</p>
+					</div>
+					<div class="swiper-slide">
+						<p>没房</p>
+					</div>
+					<div class="swiper-slide">
+						<p>不限</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+		<!--车-->
+		<div id="car" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('car').style.display='none'">取消</p>
+				<p>车</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('car').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="Car">
+				<div class="swiper-wrapper" style="top: 74px;">
+					<div class="swiper-slide">
+						<p>有车</p>
+					</div>
+					<div class="swiper-slide">
+						<p>没车</p>
+					</div>
+					<div class="swiper-slide">
+						<p>不限</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+
+		<!--同城-->
+		<div id="region" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('region').style.display='none'">取消</p>
+				<p>车</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('region').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="Region">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<p>有车</p>
+					</div>
+					<div class="swiper-slide">
+						<p>没车</p>
+					</div>
+					<div class="swiper-slide">
+						<p>不限</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+		<!--星座-->
+		<div id="cang6" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang6').style.display='none'">取消</p>
+				<p>体型</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('cang6').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="constellation">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<p>白羊座</p>
+					</div>
+					<div class="swiper-slide">
+						<p>金牛座</p>
+					</div>
+					<div class="swiper-slide">
+						<p>双子座</p>
+					</div>
+					<div class="swiper-slide">
+						<p>巨蟹座</p>
+					</div>
+					<div class="swiper-slide">
+						<p>狮子座</p>
+					</div>
+					<div class="swiper-slide">
+						<p>处女座</p>
+					</div>
+					<div class="swiper-slide">
+						<p>天秤座</p>
+					</div>
+					<div class="swiper-slide">
+						<p>天蝎座</p>
+					</div>
+					<div class="swiper-slide">
+						<p>射手座</p>
+					</div>
+					<div class="swiper-slide">
+						<p>摩羯座</p>
+					</div>
+					<div class="swiper-slide">
+						<p>水瓶座</p>
+					</div>
+					<div class="swiper-slide">
+						<p>双鱼座</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+		<!--吸烟-->
+		<div id="smoke" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('smoke').style.display='none'">取消</p>
+				<p>是否吸烟</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('smoke').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="Smoke" style="height: 120px;">
+				<div class="swiper-wrapper" style="top: 34px;">
+					<div class="swiper-slide">
+						<p>是</p>
+					</div>
+					<div class="swiper-slide">
+						<p>否</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+		<!--喝酒-->
+		<div id="drink" class="cang" style="display: none;">
+			<div>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('drink').style.display='none'">取消</p>
+				<p>是否喝酒</p>
+				<p onclick="document.getElementById('body').style.display='none';document.getElementById('drink').style.display='none'">确定</p>
+			</div>
+			<div class="swiper-container" id="Drink" style="height: 120px;">
+				<div class="swiper-wrapper" style="top: 34px;">
+					<div class="swiper-slide">
+						<p>是</p>
+					</div>
+					<div class="swiper-slide">
+						<p>否</p>
+					</div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</body>
+	<script src="../../swiper/swiper-4.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var myswiper = new Swiper("#Sex", {
+			direction: 'vertical'
+		})
+		var myswiper = new Swiper("#hunyin", {
+			direction: 'vertical'
+		})
+		var myswiper = new Swiper("#height", {
+			direction: 'vertical'
+		})
+		var myswiper = new Swiper("#xueli", {
+			direction: 'vertical'
+		})
+		var myswiper = new Swiper("#money", {
+			direction: 'vertical'
+		})
+		var myswiper = new Swiper("#tige", {
+			direction: 'vertical'
+		})
+		var myswiper = new Swiper("#tige", {
+			direction: 'vertical'
+		})
+		var myswiper = new Swiper("#constellation", {
+			direction: 'vertical'
+		})
+		var myswiper = new Swiper("#Age", {
+			direction: 'vertical'
+		})
+		var myswiper = new Swiper("#Room", {
+			direction: 'vertical'
+		})
+		var myswiper = new Swiper("#Car", {
+			direction: 'vertical'
+		})
+
+		var myswiper = new Swiper("#Region", {
+			direction: 'vertical'
+		})
+
+		var myswiper = new Swiper("#Smoke", {
+			direction: 'vertical'
+		})
+
+		var myswiper = new Swiper("#Drink", {
+			direction: 'vertical'
+		})
+	</script>
+	<script type="text/javascript">
+		for(var i = 0; i < uls.length; i++) {
+			uls[i].onclick = function() {
+				change2(this);
+			}
+		}
+
+		$(function() {
+			$("#tab div").off("click").on("click", function() {
+				var index = $(this).index();
+				$(this).addClass("fli").siblings().removeClass("fli");
+				$("#tabContent .fdiv").eq(index).addClass("active").siblings().removeClass("active");
+			});
+		});
+
+		$(function() {
+			$("#uls li").off("click").on("click", function() {
+				var index = $(this).index();
+				$(this).addClass("lis").siblings().removeClass("lis");
+				$("#contents .chu").eq(index).addClass("active").siblings().removeClass("active");
+			});
+		});
+
+		$(".zan").click(function() {
+			if($(this).hasClass("red")) {
+				$(this).removeClass("red");
+			} else {
+				$(this).addClass("red");
+			}
+		});
+
+		jQuery(function() {
+			$(".tang").click(function() {
+				$("#yin").slideToggle("slow");
+			});
+		});
+	
+		
+		$(".men").click(function(){
+			if($(".active").hasClass("icon-check")){
+				$(".active").removeClass("icon-check");
+				$(".men").css({"background":"#fff","border-color":"#ebebeb"});
+			}else {
+				$(".active").addClass("icon-check");
+				$(".men").css({"background":"#f34180","border-color":"#f34180"});
+			}
+		})
+		$(".women").click(function(){
+			if($(".actives").hasClass("icon-check")){
+				$(".actives").removeClass("icon-check");
+				$(".women").css({"background":"#fff","border-color":"#ebebeb"});
+			}else {
+				$(".actives").addClass("icon-check");
+				$(".women").css({"background":"#f34180","border-color":"#f34180"});
+			}
+		})
+		
+		
+		
+		$(".yes").click(function(){
+			if($(".aray").hasClass("icon-check")){
+				$(".aray").removeClass("icon-check");
+				$(".yes").css({"background":"#fff","border-color":"#ebebeb"});
+			}else {
+				$(".aray").addClass("icon-check");
+				$(".yes").css({"background":"#f34180","border-color":"#f34180"});
+			}
+		})
+		$(".no").click(function(){
+			if($(".arays").hasClass("icon-check")){
+				$(".arays").removeClass("icon-check");
+				$(".no").css({"background":"#fff","border-color":"#ebebeb"});
+			}else {
+				$(".arays").addClass("icon-check");
+				$(".no").css({"background":"#f34180","border-color":"#f34180"});
+			}
+		})
+	</script>
+	
+
+</html>

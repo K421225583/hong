@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>开通婚介所</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../../swiper/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/Math-Open.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../swiper/swiper-4.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="head-top">
+				<a href="Matchmaker.html">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>开通婚介所</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<ul>
+				<li>
+					<a href="Math-agent.html">
+						<div>
+							<p>请选择代理包</p>
+						</div>
+						<div>
+							<span class="icon iconfont icon-jiantouyou you"></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div>
+							<p>推荐人</p>
+						</div>
+						<div>
+							<span class="spans">添加推荐人</span>
+							<span class="icon iconfont icon-jiantouyou you"></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div>
+							<p>推荐码</p>
+						</div>
+						<div>
+							<input type="text" value="添加推荐码" class="shu"></input>
+							<span class="icon iconfont icon-jiantouyou you"></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div>
+							<p>婚介所编码</p>
+						</div>
+						<div>
+							<span class="icon iconfont icon-jiantouyou you"></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div>
+							<span>*</span>
+							<p>姓名</p>
+						</div>
+						<div>
+							<input type="text" value="" class="shu"></input>
+							<span class="icon iconfont icon-jiantouyou you"></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div>
+							<span>*</span>
+							<p>电话</p>
+						</div>
+						<div>
+							<input type="text" value="" class="shu"></input>
+							<span class="icon iconfont icon-jiantouyou you"></span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div>
+							<p>地址</p>
+						</div>
+						<div>
+							<span class="icon iconfont icon-jiantouyou you"></span>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<p>提示带*的为必填项</p>
+			<div id="photo">
+				<p>上传婚介所资质（经营资格证+实体店照片）</p>
+				<div>
+					<div>
+						<a href="javascript:;">
+							<img src="../../images/icon_upload_tx_userinfo.png" />
+							<p>经营资格证</p>
+						</a>
+					</div>
+					<div>
+						<a href="javascript:;">
+							<img src="../../images/icon_upload_tx_userinfo.png" />
+							<p>实体店照片</p>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</article>
+		<footer>
+			<a href="Math-payment.html">
+			<button>提交认证</button>
+			</a>
+			<div id="fot-bot">
+				<div class="yes">
+					<span class="icon iconfont aray"></span>
+				</div>
+				<a href="Math-know.html">我已阅读并同意《用户须知》</a>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		$(".yes").click(function() {
+			if($(".aray").hasClass("icon-check")) {
+				$(".aray").removeClass("icon-check");
+				$(".yes").css({
+					"background": "#fff",
+					"border-color": "#ebebeb"
+				});
+			} else {
+				$(".aray").addClass("icon-check");
+				$(".yes").css({
+					"background": "#f34180",
+					"border-color": "#f34180"
+				});
+			}
+		})
+	</script>
+
+</html>

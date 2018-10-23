@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	color: #000;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+	header {
+		width: 100%;
+	}
+	#head-top {
+		width: 100%;
+		background: #ea4396;
+		box-sizing: border-box;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		padding-left: 10px;
+	}
+	#head-top a {
+		text-decoration: none;
+		color: white;
+		display: flex;
+		align-items: center;
+	}
+	#head-top a i {
+		font-size: 1.75rem;
+		color: white;
+	}
+	#head-top a p {
+		font-size: 1.45rem;
+		color: white;
+	}
+	article{
+		width: 100%;
+	}
+	article ul{
+		width: 94%;
+		margin: 0 auto;
+	}
+	article ul>li{
+		width:100% ;
+		padding-bottom: 15px;
+		padding-top: 15px;
+		border-bottom: 1px solid #EBEBEB;
+	}
+	article ul li a{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	article ul li a >div{
+		display: flex;
+		align-items: center;
+	}
+	article ul li a >div:first-of-type>span:first-of-type{
+		width: 10px;
+		line-height: 12px;
+		color: #f34180;
+		font-size: 13px;
+	}
+	article ul li a >div:first-of-type>p{
+		color: #656565;
+		font-size: 13px;
+	}
+	.spans{
+		padding: 2px 4px;
+		border: 1px solid #E64C7E;
+		color: #E64C7E;
+		border-radius: 5px;
+		margin-right: 6px;
+	}
+	.you{
+		color: #9d9d9d;
+	}
+	.shu{
+		width: 80px;
+		border: none;
+		height: 30px;
+		outline: none;
+	}
+	article >p{
+		font-size: 11px;
+		margin-left: 10px;color: #f34180;
+		margin-top: 6px;
+	}
+	#photo{
+		width: 94%;
+		margin: 0 auto;
+	}
+	#photo >p{
+		font-size: 14px;
+		color: #656565;
+		letter-spacing: 1px;
+	}
+	#photo >div{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		padding-top: 15px;
+	}
+	#photo >div >div{
+		width: 159px;
+		height: 111px;
+		border: 1px dashed #828282;
+		position: relative;
+		text-align: center;
+	}
+	#photo >div >div a >img{
+		width: 31px;
+		height: 29px;
+		margin-top: 30px;
+	}
+	#photo >div >div a >p{
+		font-size: 10px;
+		color: #9e9e9e;
+		margin-top: 10px;
+	}
+	footer{
+		width: 100%;
+			
+	}
+	footer a >button{
+		width: 84%;
+		margin-left: 8%;
+		height: 44px;
+		background: #E64C7E;
+		color: #fff;
+		border-radius: 50px;
+		border: none;
+		outline: none;
+		margin-top: 31px;
+	}
+	#fot-bot{
+		width: 84%;
+		margin: 0 auto;
+		margin-top: 10px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.yes{
+		width: 15px;
+		height: 15px;
+		border: 1px solid #EBEBEB;
+		border-radius: 50px;
+		text-align: center;
+		margin-right: 5px;
+	}
+	.yes span{
+		font-size: 9px;
+		color: white;
+	}
+}

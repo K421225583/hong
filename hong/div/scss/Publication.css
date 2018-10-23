@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+html{
+	font-size: 62.5%;
+}
+@media only screen and (min-width: 320px) and (max-width: 678px) {
+    header{
+    	width: 100%;
+    	background: #E4328A;
+    }
+    header >div{
+    	width: 94%;
+    	margin: 0 auto;
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+    }
+    header >div >a{
+    	display: flex;
+    	align-items: center;
+    }
+    header >div >a >i{
+    	font-size: 14px;
+    	color: white;
+    }
+    header >div a p{
+    	font-size: 18px;
+    	color:white;
+    	margin-left: 7px;
+    }
+    article{
+    	width: 100%;
+    	padding-top: 10px;
+    }
+    #art-top{
+    	width: 94%;
+    	margin: 0 auto;
+    	padding-bottom: 10px;
+    	border-bottom: 1px solid #EBEBEB;
+    }
+    #art-top textarea{
+    	width:100%;
+    	height: 120px;
+    	outline-style: none;
+    	margin: 0 auto;
+    	font-size: 13px;
+    	box-sizing: border-box;
+    	padding-left: 10px;
+    	border: none;
+    }
+    #photo{
+    	width: 94%;
+    	margin: 0 auto;
+    	display: flex;
+    	flex-wrap: wrap;
+    	
+    }
+    #photo >img{
+    	width: 91px;
+    	height: 91px;
+    	margin-right: 10px;
+    	margin-bottom: 10px;
+    }
+    
+    #zhao{
+    	width: 91px;
+    	height: 91px;
+    	border-radius:10px ;
+    	background: #ebebeb;
+    	text-align: center;
+    }
+  	#zhao >a img{
+  		width: 32px;
+  		height: 26px;
+  		margin-top: 30%;
+  	}
+  	#zhao >a p{
+  		color: #989898;
+  		font-size: 12.5px;
+  		margin-top: 6px;
+  	}
+  	#Location{
+  		width: 94%;
+  		margin: 0 auto;
+  		display: flex;
+  		align-items: center;
+  		padding-top: 16px;
+  	}
+  	#postion{
+  		padding:4.5px 14px;
+  		background: #ebebeb;
+  		border-radius: 500px;
+  		font-size: 10px;
+  		color: #989898;
+  	}
+  	#Location >span{
+  		font-size: 13px;
+  		margin-left: 10px;
+  	}
+  	#tong{
+  		width: 94%;
+  		margin: 0 auto;
+  		display: flex;
+  		justify-content: space-between;
+  		padding-top: 10px;
+  		padding-bottom: 10px;
+  	}
+  	#tong>p{
+  		font-size:13px;
+  		color: #656565;
+  	}
+  	#tong >div{
+  		width: 20px;
+  		height: 20px;
+  		border: 1px solid #f34180;
+  		background: #f34180;
+  		text-align: center;
+  		line-height: 20px;
+  		border-radius: 50px;
+  	}
+  	#tong >div i{
+  		color:#FFFFFF;
+  		
+  	}
+	footer{
+		width: 100%;
+		margin-top: 40%;
+	}
+	footer>button{
+		width: 90%;
+		height: 44px;
+		line-height: 44px;
+		border: none;
+		margin-left: 5%;
+		background: #e83c92;
+		color: #fff;
+		border-radius: 50px;
+		font-size: 17.5px;
+		outline-style: none;
+	}
+}

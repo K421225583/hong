@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>收益</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/Math-Profit.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="head-top">
+				<a href="Math-success.html">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>收益</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<div id="top">
+				<div id="tou">
+					<a href="Math-Explain.html">
+					<div>当前等级：<img src="../../images/zhuan2.png"/>3</div>
+					<span class="icon iconfont icon-jiantouyou"></span>
+					</a>
+				</div>
+				<div id="price">
+					<p class="qian"> ￥10000.00</p>
+					<p>我的钱包</p>
+				</div>
+			</div>
+			<div class="hui">
+				
+			</div>
+			<div id="cont">
+				<ul id="uls">
+					<li id="tab1" class="lis">
+						<p>本月收益</p>
+						<div id="yue">
+							<div class="yue-top">
+								<p>2018-07</p>
+								<div class="san"></div>
+							</div>
+							<div class="cang">
+								<div class="son">
+									<div class="fen">2018-1</div>
+									<div class="fen">2018-2</div>
+									<div class="fen">2018-3</div>
+									<div class="fen">2018-4</div>
+									<div class="fen">2018-5</div>
+									<div class="fen">2018-6</div>
+									<div class="fen">2018-7</div>
+									<div class="fen">2018-8</div>
+									<div class="fen">2018-9</div>
+									<div class="fen">2018-10</div>
+									<div class="fen">2018-11</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li id="tab2" value="2">
+						<p>历史收益</p>
+						<div id="day">
+							<div class="day-top">
+								<p>请选择日期</p>
+								<div class="san"></div>
+							</div>
+							<div class="cang">
+								<div class="cang-son">
+									<div class="tian">请选择日期</div>
+									<div class="tian">8-1</div>
+									<div class="tian">8-2</div>
+									<div class="tian">8-3</div>
+									<div class="tian">8-4</div>
+									<div class="tian">8-5</div>
+									<div class="tian">8-6</div>
+									<div class="tian">8-7</div>
+									<div class="tian">8-8</div>
+									<div class="tian">8-9</div>
+									<div class="tian">8-10</div>
+									<div class="tian">8-11</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div id="contents">
+					<div id="content1" class="content active">
+						<ul class="neis">
+							<li>
+								<a href="Math-achievement.html">
+									<div>
+										<p>业绩奖</p>
+									</div>
+									<div>
+										<p>￥100.00</p>
+										<span class="icon iconfont icon-jiantouyou"></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="Math-Turnover.html">
+									<div>
+										<p>婚介所营业额份额分佣</p>
+									</div>
+									<div>
+										<p>￥100.00</p>
+										<span class="icon iconfont icon-jiantouyou"></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="Math-Expansion.html">
+									<div>
+										<p>拓展奖</p>
+									</div>
+									<div>
+										<p>￥100.00</p>
+										<span class="icon iconfont icon-jiantouyou"></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="Math-Maid.html">
+									<div>
+										<p>区域分佣</p>
+									</div>
+									<div>
+										<p>￥100.00</p>
+										<span class="icon iconfont icon-jiantouyou"></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="Math-activation.html">
+									<div>
+										<p>婚介所激活奖</p>
+									</div>
+									<div>
+										<p>￥100.00</p>
+										<span class="icon iconfont icon-jiantouyou"></span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div id="content2" class="content">
+						<ul class="neis">
+							<li>
+								<p>新增帮友</p>
+								<p>5人</p>
+							</li>
+							<li>
+								<p>新增单身用户</p>
+								<p>5人</p>
+							</li>
+							<li>
+								<p>牵线成功数量</p>
+								<p>10对</p>
+							</li>
+							<li>
+								<p>交易额</p>
+								<p class="price">￥20000.00</p>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</article>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$("#uls li").off("click").on("click", function() {
+				var index = $(this).index();
+				$(this).addClass("lis").siblings().removeClass("lis");
+				$("#contents .content").eq(index).addClass("active").siblings().removeClass("active");
+			});
+		});
+		
+		$(".yue-top").click(function(){
+			$(".son").css({"height":"126px"});
+			
+		})
+		$(".day-top").click(function(){
+			$(".cang-son").css({"height":"126px"})
+		})
+		$(".fen").click(function(){
+			$(".yue-top").children("p").text($(this).text());
+			$(".son").css({"height":"0px"});
+		})
+		$(".tian").click(function(){
+			$(".day-top").children("p").text($(this).text());
+			$(".cang-son").css({"height":"0px"});
+		})
+	</script>
+
+</html>

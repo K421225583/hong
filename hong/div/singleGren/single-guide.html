@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>脱单指南</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/single-guide.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<a href="">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>脱单指南</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<div class="lis">
+				<a href="javascript:;">
+					<img src="../../images/tuo1.jpg" alt="" />
+					<div class="cot">
+						<p class="title">女生该不该主动相约?</p>
+						<div class="Appointment">
+							<span>约会准备</span>
+							<div>
+								<span class="icon iconfont icon-guancha-"></span>
+								<span>2.4万</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="lis">
+				<a href="javascript:;">
+					<img src="../../images/tuo2.jpg" alt="" />
+					<div class="cot">
+						<p class="title">为什么每次约喜欢的妹子见面都会被拒绝?</p>
+						<div class="Appointment">
+							<span>约会准备</span>
+							<div>
+								<span class="icon iconfont icon-guancha-"></span>
+								<span>3.6万</span>
+							</div>
+						</div>
+
+					</div>
+				</a>
+			</div>
+			<div class="lis">
+				<p class="title">相亲时，如何判断妹子是否中意你？</p>
+				<div class="video">
+					<video id="video-active">
+						<source src="../../js/shi.mp4" type="video/mp4"></source>
+						<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+							<param name="movie" value="myvideo.swf" />
+							<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+						</object>
+					</video>
+					<img src="../../images/play.png" id="palys" />
+					<div id="duration">0:00</div>
+				</div>
+				<div class="Appointment">
+					<span>约会准备</span>
+					<div>
+						<span>1万播放量</span>
+					</div>
+				</div>
+				<div id="current" style="display: none;">0:00</div>
+				
+
+			</div>
+			<div class="lis">
+				<a href="javascript:;">
+					<img src="../../images/tuo1.jpg" alt="" />
+					<div class="cot">
+						<p class="title">女生该不该主动相约?</p>
+						<div class="Appointment">
+							<span>约会准备</span>
+							<div>
+								<span class="icon iconfont icon-guancha-"></span>
+								<span>2.4万</span>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="lis">
+				<a href="javascript:;">
+					<img src="../../images/tuo2.jpg" alt="" />
+					<div class="cot">
+						<p class="title">为什么每次约喜欢的妹子见面都会被拒绝?</p>
+						<div class="Appointment">
+							<span>约会准备</span>
+							<div>
+								<span class="icon iconfont icon-guancha-"></span>
+								<span>3.6万</span>
+							</div>
+						</div>
+
+					</div>
+				</a>
+			</div>
+		</article>
+	</body>
+	<script type="text/javascript">
+		$("#palys").click(function() {
+			$("#palys").hide(200);
+			$('video').trigger('play');
+			$('video').click(function() {
+				$("#palys").show(200);
+				$('video').trigger('pause');	
+			})
+		})
+		function onTrackedVideoFrame(currentTime, duration) {
+			$("#current").text(currentTime);
+			
+			$("#duration").text(duration);
+			if($("#current").text()==$("#duration").text()){
+				$("#palys").show(200);
+			}
+		}
+		$(document).ready(function() {
+			$("#video-active").on(
+				"timeupdate",
+				function(event) {
+					onTrackedVideoFrame(this.currentTime, this.duration);
+			});
+					
+		})
+		
+			
+	</script>
+
+</html>

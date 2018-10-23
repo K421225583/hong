@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>做红娘</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../../swiper/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/Math_home.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../swiper/swiper-4.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="head-top">
+				<a href="../home.html">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>红娘个人中心</p>
+				</a>
+			</div>
+		</header>
+		<div id="tabs">
+			<div id="div1" class="show">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="../../images/timg.png" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../../images/timg.png" />
+						</div>
+						<div class="swiper-slide">
+							<img src="../../images/timg.png" />
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div id="write">
+					<a href="Math-Complaint.html">
+						<img src="../../images/write.png" />
+						<span>投诉举报</span>
+					</a>
+				</div>
+				<article>
+					<div id="arit-top">
+						<!--登录注册头像部分-->
+						<div>
+							<a href=""><img src="../../images/dan_05.png" /></a>
+								<a href=""><p>注册/登录</p></a>
+								<a href=""><span>切换单身</span></a>
+						</div>
+						<div id="arit-bot">
+							<div>
+								<a href="Math-success.html">
+									<p>0</p>
+									<span>牵线成功</span>
+								</a>
+							</div>
+							<div>
+								<a href="Math-Profit.html">
+									<p>0</p>
+									<span>收益</span>
+								</a>
+							</div>
+						</div>
+						<span class="shang"><a href="Math-reward.html">我要领赏金</a></span>
+					</div>
+					<div id="arit-fot">
+						<div id="bot-top">
+							<div>
+								<a href="Math-single-group.html">
+									<img src="../../images/xing12.png" />
+									<p>我的单身团</p>
+								</a>
+							</div>
+							<div>
+								<a href="Math-maker-group.html">
+									<img src="../../images/becomehong.png" />
+									<p>我的红娘帮</p>
+								</a>
+							</div>
+						</div>
+						<div id="bot-midle">
+							<div>
+								<a href="">
+									<p>用户评价</p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</a>
+							</div>
+							<div>
+								<a href="Math-Apply.html">
+									<p>申请提现</p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</a>
+							</div>
+							<div>
+								<a href="Math-Classroom.html">
+									<p>红娘课堂</p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</a>
+							</div>
+							<!--<div>
+								<a href="">
+									<p>通知</p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</a>
+							</div>-->
+							<div>
+								<a href="Math-feedback.html">
+									<p>意见反馈</p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</a>
+							</div>
+
+							<div>
+								<a href="Math-Open.html">
+									<p>开通婚介所</p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</a>
+							</div>
+							<div>
+								<a href="Math-join.html">
+									<p>代理加盟</p>
+									<span class="icon iconfont icon-jiantouyou"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="foot">
+						<div>
+							<a href="">
+								<p>设置</p>
+								<span class="icon iconfont icon-jiantouyou"></span>
+							</a>
+						</div>
+					</div>
+				</article>
+			</div>
+			
+		</div>
+		<footer>
+			<div>
+				<div >
+					<a href="../home.html">
+						<img src="../../images/shou2.png"/>
+						<p style="color: #E64C7E">首页</p>
+					</a>
+				</div>
+				<div>
+					<a href="../Matrimonial_Office/Matrimonial_Office.html" >
+						<img src="../../images/婚介所未选中.png"/>
+						<p>婚介所</p>
+					</a>
+				</div>
+				<div>
+					<a href="../Matrimonial_Office/Profit.html" >
+						<img src="../../images/收益未点击.png"/>
+						<p >收益</p>
+					</a>
+				</div>
+				<div>
+					<a href="../Math-My/My_firsrt.html">
+						<img src="../../images/my.png"/>
+						<p>我的</p>
+					</a>
+				</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+//		$('#uls li').click(function() {
+//			var i = $(this).index(); //下标第一种写法
+//			//var i = $('tit').index(this);//下标第二种写法
+//			$(this).addClass('select').siblings().removeClass('select');
+//			$('#tabs >div').eq(i).show().siblings().hide();
+//		});
+
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: true, //可选选项，自动滑动
+			pagination: {
+				el: '.swiper-pagination'
+			}
+		})
+		
+		//视频控制
+		
+		$(".biao").click(function(){
+			if($(this).children("img").is(":hidden")){
+				$(this).children("img").show(300);
+				$("video").trigger("pause");
+			}else{
+				$(this).children("img").hide(300);
+				$(this).prev("video").trigger("play");
+			}
+		})
+	</script>
+
+</html>

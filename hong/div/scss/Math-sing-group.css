@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+@media only screen and (min-width: 320px) and (max-width:768px) {
+	header {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background: #E64C7E;
+	}
+	header>div {
+		width: 94%;
+		margin: 0 auto;
+	}
+	header>div>a {
+		display: flex;
+		align-items: center;
+		color: white;
+	}
+	header>div>a i {
+		font-size: 20px;
+	}
+	header>div>a p {
+		font-size: 17px;
+		margin-left: 6px;
+	}
+	#tuijian a p{
+		font-size: 14px;
+		color: #f34180;
+	}
+	article {
+		width: 100%;
+	}
+	#top {
+		width: 100%;
+		padding-bottom: 50px;
+		
+	}
+	#tou {
+		width: 84%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		padding-top: 12px;
+	}
+	#tou>img {
+		width: 107.5px;
+		height: 107.5px;
+		border-radius: 50px;
+	}
+	#tou >div>p:first-of-type{
+		font-size: 22px;
+		margin-left: 21px;
+	}
+	#tuijian{
+		display: flex;
+		align-items: center;
+		padding-left: 21px;
+		font-size: 13.5px;
+		padding-top: 12px;
+		color: #656565;
+	}
+	
+	.hui{
+		width: 100%;
+		height: 10px;
+		background: #EBEBEB;
+	}	
+	#neirong{
+		width: 100%;
+	}
+	#midle-top{
+		width: 94%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 14px;
+		padding-top: 14px;
+		border-bottom: 1px solid #EBEBEB;
+	}
+	
+	#midle-top >p:first-of-type{
+		font-size: 14px;
+		color: #656565;
+	}
+	#midle-top >p:last-of-type{
+		font-size: 13px;
+		color: #f34180;
+	}
+	
+	.divs{
+		width: 94%;
+		margin: 0 auto;
+	}
+	.lies{
+		width: 100%;
+		
+		border-bottom: 1px solid #EBEBEB;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.lies a{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.lies a >div{
+		width: 50%;
+		text-align: left;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		padding-left: 10px;
+	}
+	.lies a >div >img{
+		width: 38px;
+		height: 38px;
+		border-radius: 50px;
+	}
+	.lies a >div >p{
+		margin-left: 9px;
+		font-size: 12.5px;color: #8c8c8c;
+	}
+	.lies a >span{
+		font-size: 14px;
+		color: #7E7E7E;
+	}
+	footer{
+		width: 100%;
+		margin-top: 120px;
+	}
+	footer a >button{
+		width: 84%;
+		margin: 0 auto;
+		height: 44px;
+		background: #E64C7E;
+		color: white;
+		border-radius: 50px;
+		border: none;
+		margin-left: 8%;
+		outline: none;
+	}
+}

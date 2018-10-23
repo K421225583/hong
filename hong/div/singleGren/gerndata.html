@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css"/>
+		<link rel="stylesheet" href="../scss/gerndata.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<div id="">
+				<a href="single-Personal.html">
+					<i class="icon iconfont icon-guanbi"></i>
+					<p>我的</p>
+				</a>
+			</div>
+			<div>
+				<a href="javascript:;">
+					<img src="../../images/shou_22.png"/>
+					<p>芷若汀兰</p>
+					<span>女   28岁   未婚</span>
+				</a>
+			</div>
+		</header>
+		
+		<article>
+			<ul>
+				<li>
+					<div>
+						<span></span>
+						<span>
+							我的交友宣言
+						</span>							
+					</div>
+					
+					<div>
+						<p>因为遇见，所以喜欢</p>
+						<span class="icon iconfont icon-jiantouyou"></span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span></span>
+						<span>
+							相册
+						</span>							
+					</div>
+					
+					<div>
+						<div id="photos">
+							<img src="../../images/shui_1.jpg"/>
+							<img src="../../images/shui_2.jpg" alt="" />
+							<img src="../../images/shui_3.jpeg"/>
+						</div>
+						<span class="icon iconfont icon-jiantouyou"></span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span></span>
+						<span>
+							昵称
+						</span>							
+					</div>
+					
+					<div>
+						<p>芷若汀兰</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span style="padding: 10px 0px;">*</span>
+						<span>
+							性别
+						</span>							
+					</div>
+					<div>
+						<span>男</span>
+						<div class="men"><i class="icon iconfont icon-check active"></i></div>
+						<span>女</span>
+						<div class="women"><i class="icon iconfont  actives"></i></div>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span style="padding: 10px 0px;">*</span>
+						<span>
+							生日
+						</span>							
+					</div>
+					<div>
+						<span>1990-12-24</span>
+						<span class="icon iconfont icon-jiantouyou"></span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span style="padding: 10px 0px;">*</span>
+						<span>
+							身高
+						</span>							
+					</div>
+					<div>
+						<p>175</p>
+						<span class="icon iconfont icon-jiantouyou"></span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span style="padding: 10px 0px;">*</span>
+						<span>
+							婚姻状况
+						</span>							
+					</div>
+					<div>
+						<span>未婚</span>
+						<span class="icon iconfont icon-jiantouyou"></span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span style="padding: 10px 0px;">*</span>
+						<span>
+							职业
+						</span>							
+					</div>
+					<div>
+						<span></span>
+						<span class="icon iconfont icon-jiantouyou"></span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span></span>
+						<span>
+							所在地
+						</span>							
+					</div>
+					<div>
+						<span></span>
+						<span class="icon iconfont icon-jiantouyou"></span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span ></span>
+						<span>
+							籍贯	
+						</span>							
+					</div>
+					<div>
+						<span></span>
+						<span class="icon iconfont icon-jiantouyou"></span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span style="padding: 10px 0px;">*</span>
+						<span>
+							学历
+						</span>							
+					</div>
+					<div>
+						<span></span>
+						<span class="icon iconfont icon-jiantouyou"></span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span style="padding: 10px 0px;">*</span>
+						<span>
+							月收入
+						</span>							
+					</div>
+					<div>
+						<span></span>
+						<span class="icon iconfont icon-jiantouyou"></span>
+						<span class="icon iconfont icon-guancha-" style="color:#f34180;font-size: 12px;"></span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<span ></span>
+						<span>实名认证</span>							
+					</div>
+					<div>
+						<span>未认证</span>
+						<span class="Authentication" style="color:#E64C7E;">去认证</span>
+					</div>
+				</li>
+			</ul>
+		</article>
+		
+		<footer>
+			<div>
+				<div id="du">
+					<i class="icon iconfont asys"></i>
+				</div>
+				<span>阅读并同意相关条款</span>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		
+		
+		$(".men").click(function(){
+			if($(".active").hasClass("icon-check")){
+				$(".active").removeClass("icon-check");
+				$(".men").css({"background":"#fff","border-color":"#ebebeb"});
+			}else {
+				$(".active").addClass("icon-check");
+				$(".men").css({"background":"#f34180","border-color":"#f34180"});
+			}
+		})
+		$(".women").click(function(){
+			if($(".actives").hasClass("icon-check")){
+				$(".actives").removeClass("icon-check");
+				$(".women").css({"background":"#fff","border-color":"#ebebeb"});
+			}else {
+				$(".actives").addClass("icon-check");
+				$(".women").css({"background":"#f34180","border-color":"#f34180"});
+			}
+		})
+		$("#du").click(function(){
+			if($(".asys").hasClass("icon-check")){
+				$(".asys").removeClass("icon-check");
+				$("#du").css({"background":"#fff","border-color":"#ebebeb"});
+			}else {
+				$(".asys").addClass("icon-check");
+				$("#du").css({"background":"#f34180","border-color":"#f34180"});
+			}
+		})
+	</script>
+</html>

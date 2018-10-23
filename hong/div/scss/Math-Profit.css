@@ -1,0 +1,217 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+@media only screen and (min-width: 320px) and (max-width:768px) {
+	header {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background: #E64C7E;
+	}
+	header>div {
+		width: 94%;
+		margin: 0 auto;
+	}
+	header>div>a {
+		display: flex;
+		align-items: center;
+		color: white;
+	}
+	header>div>a i {
+		font-size: 20px;
+	}
+	header>div>a p {
+		font-size: 17px;
+		margin-left: 6px;
+	}
+	article {
+		width: 100%;
+	}
+	#top {
+		width: 100%;
+		border-bottom: 1px solid #EBEBEB;
+	}
+	#tou {
+		width: 94%;
+		margin: 0 auto;
+		
+		padding-top: 12px;
+	}
+	#tou a{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#tou a >div{
+		font-size: 13.5px;
+		color:#8c8c8c ;
+		align-items: center;
+	}
+	#tou a >div img{
+		width: 12px;
+		height: 13px;
+		vertical-align:middle;
+		margin-right: 3px;
+	}
+	
+	#price {
+		padding-top: 30px;
+		text-align: center;
+		padding-bottom: 25px;
+	}
+	.qian{
+		font-size: 29px;
+		color: #feb000;
+	}
+	.qian::first-letter{
+		font-size: 24px;
+	}
+	#price >p:last-of-type{
+		font-size: 15px;
+		color: #656565;
+	}
+	.hui{
+		width: 100%;
+		height: 10px;
+		background: #ebebeb;
+	}
+	#uls {
+		width: 94%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+	}
+	#uls li {
+		width: 25%;
+		text-align: center;
+		color: #656565;
+		font-weight: 600;
+		padding-top: 13px;
+		padding-bottom: 10px;
+	}
+	
+	#uls .lis {
+		border-bottom: 1px solid #E6388F;
+	}
+	#yue{
+		width: 100%;
+		position: relative;
+		background: white;
+	}
+	.yue-top{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.san{
+		width:0;height:0;
+		border:6px solid #000;
+		 border-color:#989898 transparent transparent transparent;
+		 margin-top: 6px;
+		 margin-left:5px;
+	}
+	
+	.cang{
+		width: 100%;
+		position: absolute;
+		bottom: -136px;
+		z-index: 600;
+		background: white;
+		box-shadow: 0px 0px 5px #989898;
+	}
+	.son{
+		width: 100%;
+		height:0px;
+		overflow: scroll;
+	}
+	.fen{
+		padding: 10px;
+		border-bottom: 1px solid #EBEBEB;
+	}		
+	
+	#day{
+		width: 100%;
+		position: relative;
+		background: white;
+	}
+	
+	.day-top{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.cang-son{
+		width: 100%;
+		height:0px;
+		overflow: scroll;
+	}
+	
+	.tian{
+		padding: 10px;
+		border-bottom: 1px solid #EBEBEB;
+	}
+	
+	
+	
+	
+	#contents{
+		width: 94%;
+		margin: 0 auto;
+	}
+	#contents .content {
+		display: none;
+	}
+	#contents .active {
+	display: block;
+	}
+	
+	#content1{
+		width: 100%;
+		
+	}
+	.neis{
+		width: 100%;
+		
+	}
+	.neis li{
+		width: 100%;
+		padding-top: 14px;
+		padding-bottom: 14px;
+		border-bottom: 1px solid #ebebeb;
+		
+	}
+	.neis li a{
+		display: flex;
+		justify-content: space-between;
+		color: #8c8c8c;
+	}
+	.neis li a >div:first-of-type{
+		font-size: 13px;
+	}
+	.neis li a >div:last-of-type{
+		display: flex;
+		align-items: center;
+	}
+	.neis li a >div:last-of-type >p{
+		font-size: 13px;
+		color: #555555;
+	}
+	.neis li a >div:last-of-type >p::first-letter{
+		font-size: 10px;
+		
+	}
+	.neis li a >div:last-of-type >span{
+		font-size: 13px;
+	}
+}

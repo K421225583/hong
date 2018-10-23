@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>婚介所营业额分佣</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../scss/Math-Turnover.css" />
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="head-top">
+				<a href="Math-Profit.html">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>婚介所营业额分佣</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<div id="yue">
+				<div class="yue-top">
+					<p>2018-07</p>
+					<div class="san"></div>
+				</div>
+				<div class="cang">
+					<div class="son">
+						<div class="fen">2018-1</div>
+						<div class="fen">2018-2</div>
+						<div class="fen">2018-3</div>
+						<div class="fen">2018-4</div>
+						<div class="fen">2018-5</div>
+						<div class="fen">2018-6</div>
+						<div class="fen">2018-7</div>
+						<div class="fen">2018-8</div>
+						<div class="fen">2018-9</div>
+						<div class="fen">2018-10</div>
+						<div class="fen">2018-11</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="lis">
+				<p>红娘总人数</p>
+				<p>20人</p>
+			</div>
+			<div class="lis">
+				<p>今日营业额</p>
+				<p class="price">￥100.00</p>
+			</div>
+			<div class="lis">
+				<p>月营业额</p>
+				<p class="price">￥100.00</p>
+			</div>
+			<div class="lis">
+				<p>月收益</p>
+				<p class="price">￥100.00</p>
+			</div>
+			<div class="lis">
+				<p>日收益</p>
+				<p class="price">￥100.00</p>
+			</div>
+			<div class="lis">
+				<p>历史营业额</p>
+				<p class="price">￥100.00</p>
+			</div>
+			<div class="lis">
+				<p>历史收益</p>
+				<p class="price">￥100.00</p>
+			</div>
+		</article>
+
+		<div id="footer">
+			<div>
+				<p>90天最多可提现￥5000.00</p>
+			</div>
+			<div>
+				<svg xmlns="http://www.w3.org/200/svg" height="110" width="110">
+					<circle cx="55" cy="55" r="50" fill="none" stroke="grey" stroke-width="5" stroke-linecap="round" />
+					<circle class="demo2" id="J_demo2" cx="55" cy="55" r="50" fill="none" stroke="#00bbf4" stroke-width="5" stroke-dasharray="0,10000" />
+				</svg>
+				<div id="right-midle">
+					<p>￥3000.00</p>
+					<p>31天</p>	
+				</div>
+				
+				<button>快乐返提现</button>
+			</div>
+		</div>
+		<footer>
+			<button>开通婚介所</button>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$("#uls li").off("click").on("click", function() {
+				var index = $(this).index();
+				$(this).addClass("lis").siblings().removeClass("lis");
+				$("#contents .content").eq(index).addClass("active").siblings().removeClass("active");
+			});
+		});
+
+		$(".yue-top").click(function() {
+			$(".son").css({
+				"height": "126px"
+			});
+
+		})
+		$(".day-top").click(function() {
+			$(".cang-son").css({
+				"height": "126px"
+			})
+		})
+		$(".fen").click(function() {
+			$(".yue-top").children("p").text($(this).text());
+			$(".son").css({
+				"height": "0px"
+			});
+		})
+		$(".tian").click(function() {
+			$(".day-top").children("p").text($(this).text());
+			$(".cang-son").css({
+				"height": "0px"
+			});
+		})
+			
+			
+			//调整圆形进度条
+		var demo2 = document.querySelector("#J_demo2");
+		var btn1 = document.querySelector("#J_btn_1");
+		var btn2 = document.querySelector("#J_btn_2");
+
+		var circleLength = Math.floor(2 * Math.PI * demo2.getAttribute("r"));
+
+		rotateCircle();
+
+		function rotateCircle() {
+			var val = parseFloat(30).toFixed(2);  //此处为进度占比  满为100
+			val = Math.max(0, val);
+			val = Math.min(100, val);
+			demo2.setAttribute("stroke-dasharray", "" + circleLength * val / 100 + ",10000");
+		}
+	</script>
+
+</html>

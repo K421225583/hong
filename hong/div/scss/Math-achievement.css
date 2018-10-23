@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+	background:#ebebeb;
+}
+
+@media only screen and (min-width: 320px) and (max-width:768px) {
+	header {
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background: #E64C7E;
+	}
+	header>div {
+		width: 94%;
+		margin: 0 auto;
+	}
+	header>div>a {
+		display: flex;
+		align-items: center;
+		color: white;
+	}
+	header>div>a i {
+		font-size: 20px;
+	}
+	header>div>a p {
+		font-size: 17px;
+		margin-left: 6px;
+	}
+	article{
+		width: 100%;
+		
+	}
+	.lis{
+		width: 94%;
+		background: white;
+		margin: 0 auto;
+		box-sizing: border-box;
+		padding: 13px 10px;
+		margin-top: 9px;
+		border-radius: 5px;
+	}
+	.lis a div{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 10px;
+	}
+	.lis a div p:first-of-type{
+		font-size:15px ;
+		color: #828282;
+	}
+	.lis a div p:last-of-type{
+		color: #555555;
+		font-size:14px ;
+	}
+	.price::first-letter{
+		font-size: 10px;
+	}
+}

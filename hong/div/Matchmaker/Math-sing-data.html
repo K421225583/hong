@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>单身团资料</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../foot/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../scss/Math-sing-data.css"/>
+		<script src="../../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header>
+			<div id="head-top">
+				<a href="Math-single-group.html">
+					<i class="icon iconfont icon-fanhui"></i>
+					<p>我的单身团</p>
+				</a>
+			</div>
+		</header>
+		<article>
+			<div id="top">
+				<div>
+					<img src="../../images/1510206525_vvYATbnW.png"/>
+				</div>
+				<div>
+					<p>张一一</p>
+					<div>
+						<div>
+							<p>2018-06-12</p>
+							<p>注册时间</p>
+						</div>
+						<div>
+							<p>3天</p>
+							<p>沉默天数</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<textarea name="" rows="" cols="" placeholder="给他/她推荐语（100字以内）"></textarea>
+			
+			<div id="cont">
+				<ul id="uls">
+					<li id="tab1" class="lis">
+						<p>月维度</p>
+						<div id="yue">
+							<div class="yue-top">
+								<p>2018-07</p>
+								<div class="san"></div>
+							</div>
+							<div class="cang">
+								<div class="son">
+									<div class="fen">2018-1</div>
+									<div class="fen">2018-2</div>
+									<div class="fen">2018-3</div>
+									<div class="fen">2018-4</div>
+									<div class="fen">2018-5</div>
+									<div class="fen">2018-6</div>
+									<div class="fen">2018-7</div>
+									<div class="fen">2018-8</div>
+									<div class="fen">2018-9</div>
+									<div class="fen">2018-10</div>
+									<div class="fen">2018-11</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li id="tab2" value="2">
+						<p>日维度</p>
+						<div id="day">
+							<div class="day-top">
+								<p>请选择日期</p>
+								<div class="san"></div>
+							</div>
+							<div class="cang">
+								<div class="cang-son">
+									<div class="tian">请选择日期</div>
+									<div class="tian">8-1</div>
+									<div class="tian">8-2</div>
+									<div class="tian">8-3</div>
+									<div class="tian">8-4</div>
+									<div class="tian">8-5</div>
+									<div class="tian">8-6</div>
+									<div class="tian">8-7</div>
+									<div class="tian">8-8</div>
+									<div class="tian">8-9</div>
+									<div class="tian">8-10</div>
+									<div class="tian">8-11</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div id="contents">
+					<div id="content1" class="content active">
+						<ul class="neis">
+							<li>
+								<a href="">
+									<div>
+										<p>充值金额</p>
+									</div>
+									<div>
+										<p>￥100.00</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div>
+										<p>打赏谢媒糖</p>
+									</div>
+									<div>
+										<p>￥100.00</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div>
+										<p>历史打赏合计</p>
+									</div>
+									<div>
+										<p>￥100.00</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div id="content2" class="content">
+						<ul class="neis">
+							<li>
+								<a href="">
+									<div>
+										<p>充值金额</p>
+									</div>
+									<div>
+										<p>￥100.00</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div>
+										<p>打赏谢媒糖</p>
+									</div>
+									<div>
+										<p>￥100.00</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div>
+										<p>历史打赏合计</p>
+									</div>
+									<div>
+										<p>￥100.00</p>
+									</div>
+								</a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</article>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$("#uls li").off("click").on("click", function() {
+				var index = $(this).index();
+				$(this).addClass("lis").siblings().removeClass("lis");
+				$("#contents .content").eq(index).addClass("active").siblings().removeClass("active");
+			});
+		});
+		
+		$(".yue-top").click(function(){
+			$(".son").css({"height":"126px"});
+			
+		})
+		$(".day-top").click(function(){
+			$(".cang-son").css({"height":"126px"})
+		})
+		$(".fen").click(function(){
+			$(".yue-top").children("p").text($(this).text());
+			$(".son").css({"height":"0px"});
+		})
+		$(".tian").click(function(){
+			$(".day-top").children("p").text($(this).text());
+			$(".cang-son").css({"height":"0px"});
+		})
+		
+	</script>
+</html>

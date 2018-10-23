@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+html{
+	font-size: 62.5%;
+	background: #EBEBEB;
+}
+@media only screen and (min-width: 320px) and (max-width:768px) {
+    header{
+    	width: 100%;
+    	background: #E64C7E;
+    }
+    header>div{
+    	width: 94%;
+    	margin: 0 auto;
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+    		
+    }
+    header >div >a {
+    	display: flex;
+    	align-items: center;
+    }
+    header >div >a i{
+    	font-size: 14px;
+    	color: #fff;
+    } 
+    header >div a p{
+    	font-size: 18px;
+    	color: #fff;
+    	margin-left: 6px;
+    }
+    
+    article{
+    	width: 100%;
+    }
+    .lis{
+    	width:100%;
+    	margin: 0 auto;
+    	background: white;
+    	padding-top: 13px;
+    	padding-bottom: 10px;
+    	margin-bottom: 10px;
+    }
+    .li-top{
+    	width: 94%;
+    	margin: 0 auto;
+    	display: flex;
+    }
+    .tou{
+    	width: 38px;
+    	height: 38px;
+    	border-radius: 50px;
+    }
+    .li-top >div:first-of-type{
+    	width: 80%;
+    	box-sizing: border-box;
+    	padding-left: 10px;
+    }
+    .name{
+    	font-size: 14px;
+    	color: #656565;
+    }
+    .time{
+    	font-size: 8px;
+    	color: #989898;
+    	margin-top: 4px;
+    	white-space: pre;
+    }
+    #li-cont{
+    	width: 94%;
+    	margin: 0 auto;
+    }
+    .wen{
+    	width: 100%;
+    	padding-top: 8px;
+    	padding-bottom: 8px;
+    }
+    .wen >p{
+    	font-size: 14px;
+    	color: #656565;
+    	letter-spacing: 1px;
+    	line-height: 18px;
+    }
+    .img_and_vieo{
+    	width:94%;
+    	margin: 0 auto;
+    	display: flex;
+    	flex-wrap: wrap;
+    }
+    .img_and_vieo div{
+    	width: 80px;
+    	height: 80px;
+    	margin-right: 8px;
+    	
+    }
+    .img_and_vieo div >img{
+    	width: 100%;
+    	height: 100%;
+    }
+     .img_and_vieo div video{
+     	width: 100%;
+     	height:100% ;
+		object-fit: fill;
+     }
+	.number{
+		width: 94%;
+		margin:0 auto ;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+	.number >div >p{
+		font-size: 10px;
+		color: #b8b8b8;
+	}
+	.zan{
+		color:#989898 ;
+		font-size: 19px;
+	}
+	.fen{
+		color: #FF0000;
+	}
+	.number >div i:nth-of-type(2){
+		color:#989898 ;
+		font-size: 19px;
+	}
+	#Comment{
+		width: 100%;
+		position: fixed;
+		bottom: 0%;
+		z-index: 1000;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background: #e7ebee;
+		box-shadow: 0px 0px 5px #7E7E7E;
+		display: none;
+	}
+	#nei{
+		width: 100%;
+	}
+	.shu{
+		width: 94%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.shu input{
+		width: 80%;
+		height: 30px;
+		border-radius:5px ;
+		background: white;
+		outline-style: none;
+		border: 1px solid #d4d8d7;
+		box-sizing: border-box;
+		padding-left: 6px;
+		color: #a6a6a6;
+	}
+	.shu button{
+		width: 18%;
+		height: 30px;
+		margin:  auto;
+		background: white;
+		outline-style: none;
+		border-radius: 5px;
+		border: 1px solid #d4d8d7;
+		color: #a6a6a6;
+	}
+}

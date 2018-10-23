@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+html{
+	font-size: 62.5%;
+	background: #ebebeb;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    header{
+    	width: 100%;
+    	background: #E64C7E;
+    }
+    header>div{
+    	width: 94%;
+    	margin: 0 auto;
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+    }
+    header >div a{
+    	display: flex;
+    	align-items: center;
+    }
+    header >div a i{
+    	font-size: 20px;
+    	color: #fff;
+    }
+    header >div a p{
+    	font-size: 17px;
+    	color: white;
+    }
+    article{
+    	width: 100%;
+    	padding-top: 26px;
+    }
+    
+    .quan{
+    	width:89% ;
+    	margin: 0 auto;
+    	display: flex;
+    	background: url(../../images/quan.png) no-repeat;
+    	background-size:100% 100%;
+    	margin-bottom: 13px;
+    }
+    .qian{
+    	width: 59.4%;
+    	text-align: center;
+    	padding-top: 22px;
+    	padding-bottom: 10px;
+    }
+    .qian >p:first-of-type{
+    	font-size: 51.5px;
+    	color: #E64C7E;
+    }
+    .qian >p:first-of-type::first-letter{
+    	font-size: 26px;
+    }
+    .qian >p:nth-of-type(2),.quan >div:first-of-type >p:nth-of-type(3){
+    	font-size: 9px;
+    	color: #ababab;
+    }
+    .wen{
+    	width: 40.6%;
+    	text-align: center;
+    	padding-top: 25px;
+    }
+	.wen >p{
+		font-size:42.5px ;
+		color: #969696;
+	}
+	.wen button{
+		text-align: center;
+		padding: 4px 12px;
+		margin: 0 auto;
+		background: #E64C7E;
+		color: white;
+		border: none;
+		border-radius: 50px;
+		outline-style: none;
+		margin-top: 8px;
+	}
+}
